@@ -1,0 +1,35 @@
+# Prerequisites
+GTestSetup/*.d
+
+# Compiled Object files
+GTestSetup/*.slo
+GTestSetup/*.lo
+GTestSetup/*.o
+GTestSetup/*.obj
+
+# Precompiled Headers
+GTestSetup/*.gch
+GTestSetup/*.pch
+
+# Compiled Dynamic libraries
+GTestSetup/*.so
+GTestSetup/*.dylib
+GTestSetup/*.dll
+
+# Fortran module files
+GTestSetup/*.mod
+GTestSetup/*.smod
+
+# Compiled Static libraries
+GTestSetup/*.lai
+GTestSetup/*.la
+GTestSetup/*.a
+GTestSetup/*.lib
+
+# Executables
+GTestSetup/*.exe
+GTestSetup/*.out
+GTestSetup/*.app
+
+# Build
+GTestSetup/build/*.*
