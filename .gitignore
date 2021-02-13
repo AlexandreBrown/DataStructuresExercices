@@ -1,35 +1,37 @@
 # Prerequisites
-GTestSetup/*.d
+Exercices/*.d
 
 # Compiled Object files
-GTestSetup/*.slo
-GTestSetup/*.lo
-GTestSetup/*.o
-GTestSetup/*.obj
+Exercices/*.slo
+Exercices/*.lo
+Exercices/*.o
+Exercices/*.obj
 
 # Precompiled Headers
-GTestSetup/*.gch
-GTestSetup/*.pch
+Exercices/*.gch
+Exercices/*.pch
 
 # Compiled Dynamic libraries
-GTestSetup/*.so
-GTestSetup/*.dylib
-GTestSetup/*.dll
+Exercices/*.so
+Exercices/*.dylib
+Exercices/*.dll
 
 # Fortran module files
-GTestSetup/*.mod
-GTestSetup/*.smod
+Exercices/*.mod
+Exercices/*.smod
 
 # Compiled Static libraries
-GTestSetup/*.lai
-GTestSetup/*.la
-GTestSetup/*.a
-GTestSetup/*.lib
+Exercices/*.lai
+Exercices/*.la
+Exercices/*.a
+Exercices/*.lib
 
 # Executables
-GTestSetup/*.exe
-GTestSetup/*.out
-GTestSetup/*.app
+Exercices/*.exe
+Exercices/*.out
+Exercices/*.app
 
 # Build
-GTestSetup/build/*.*
+Exercices/build/*.*
+Exercices/cmake-build-debug/
+Exercices/cmake-build-debug/*.*

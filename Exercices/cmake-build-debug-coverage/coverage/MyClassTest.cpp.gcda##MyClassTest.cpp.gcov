@@ -1,0 +1,298 @@
+        -:    0:Source:/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/src/test/MyClassTest.cpp
+        -:    0:Graph:/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/cmake-build-debug-coverage/CMakeFiles/Exercices_test.dir/src/test/MyClassTest.cpp.gcno
+        -:    0:Data:/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/cmake-build-debug-coverage/CMakeFiles/Exercices_test.dir/src/test/MyClassTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <gtest/gtest.h>
+        -:    2:#include "../main/MyClass.h"
+        -:    3:
+        -:    4:namespace {
+        -:    5:class MyClassTest : public testing::Test {
+        -:    6:
+        -:    7: public:
+        -:    8:  MyClass myClass;
+        -:    9:
+        6:   10:  void SetUp() override {
+        6:   11:	myClass = MyClass();
+        6:   12:  }
+        -:   13:};
+        -:   14:}
+        -:   15:
+        4:   16:TEST_F(MyClassTest, ContainsCycle_returns_true_when_list_contains_cycle) {
+        -:   17:
+        1:   18:  auto item = std::rand();
+        1:   19:  auto list = std::forward_list<int>{std::rand(), item, std::rand(), item, std::rand()};
+        -:   20:
+        1:   21:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   22:
+       1*:   23:  ASSERT_TRUE(containsCycle);
+        -:   24:}
+------------------
+_ZN68MyClassTest_ContainsCycle_returns_true_when_list_contains_cycle_TestC2Ev:
+        1:   16:TEST_F(MyClassTest, ContainsCycle_returns_true_when_list_contains_cycle) {
+        1:   16-block  0
+------------------
+_ZN68MyClassTest_ContainsCycle_returns_true_when_list_contains_cycle_TestD0Ev:
+        1:   16:TEST_F(MyClassTest, ContainsCycle_returns_true_when_list_contains_cycle) {
+        1:   16-block  0
+------------------
+_ZN68MyClassTest_ContainsCycle_returns_true_when_list_contains_cycle_TestD2Ev:
+        1:   16:TEST_F(MyClassTest, ContainsCycle_returns_true_when_list_contains_cycle) {
+        1:   16-block  0
+------------------
+_ZN68MyClassTest_ContainsCycle_returns_true_when_list_contains_cycle_Test8TestBodyEv:
+        1:   16:TEST_F(MyClassTest, ContainsCycle_returns_true_when_list_contains_cycle) {
+        -:   17:
+        1:   18:  auto item = std::rand();
+        1:   18-block  0
+        1:   19:  auto list = std::forward_list<int>{std::rand(), item, std::rand(), item, std::rand()};
+    $$$$$:   19-block  0
+    $$$$$:   19-block  1
+    $$$$$:   19-block  2
+        -:   20:
+        1:   21:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   22:
+       1*:   23:  ASSERT_TRUE(containsCycle);
+        1:   23-block  0
+    %%%%%:   23-block  1
+    %%%%%:   23-block  2
+    %%%%%:   23-block  3
+    %%%%%:   23-block  4
+    %%%%%:   23-block  5
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+    $$$$$:   23-block 12
+        -:   24:}
+------------------
+        -:   25:
+        4:   26:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_contains_no_cycle) {
+        -:   27:
+        1:   28:  auto list = std::forward_list<int>{std::rand(), std::rand()};
+        -:   29:
+        1:   30:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   31:
+       1*:   32:  ASSERT_FALSE(containsCycle);
+        -:   33:}
+------------------
+_ZN72MyClassTest_ContainsCycle_returns_false_when_list_contains_no_cycle_TestC2Ev:
+        1:   26:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_contains_no_cycle) {
+        1:   26-block  0
+------------------
+_ZN72MyClassTest_ContainsCycle_returns_false_when_list_contains_no_cycle_TestD0Ev:
+        1:   26:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_contains_no_cycle) {
+        1:   26-block  0
+------------------
+_ZN72MyClassTest_ContainsCycle_returns_false_when_list_contains_no_cycle_TestD2Ev:
+        1:   26:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_contains_no_cycle) {
+        1:   26-block  0
+------------------
+_ZN72MyClassTest_ContainsCycle_returns_false_when_list_contains_no_cycle_Test8TestBodyEv:
+        1:   26:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_contains_no_cycle) {
+        -:   27:
+        1:   28:  auto list = std::forward_list<int>{std::rand(), std::rand()};
+        1:   28-block  0
+    $$$$$:   28-block  1
+    $$$$$:   28-block  2
+    $$$$$:   28-block  3
+        -:   29:
+        1:   30:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   31:
+       1*:   32:  ASSERT_FALSE(containsCycle);
+        1:   32-block  0
+    %%%%%:   32-block  1
+    %%%%%:   32-block  2
+    %%%%%:   32-block  3
+    %%%%%:   32-block  4
+    %%%%%:   32-block  5
+    $$$$$:   32-block  6
+    $$$$$:   32-block  7
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+        -:   33:}
+------------------
+        -:   34:
+        4:   35:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_is_empty) {
+        -:   36:
+        1:   37:  auto list = std::forward_list<int>{};
+        -:   38:
+        1:   39:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   40:
+       1*:   41:  ASSERT_FALSE(containsCycle);
+        -:   42:}
+------------------
+_ZN63MyClassTest_ContainsCycle_returns_false_when_list_is_empty_TestC2Ev:
+        1:   35:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_is_empty) {
+        1:   35-block  0
+------------------
+_ZN63MyClassTest_ContainsCycle_returns_false_when_list_is_empty_TestD0Ev:
+        1:   35:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_is_empty) {
+        1:   35-block  0
+------------------
+_ZN63MyClassTest_ContainsCycle_returns_false_when_list_is_empty_TestD2Ev:
+        1:   35:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_is_empty) {
+        1:   35-block  0
+------------------
+_ZN63MyClassTest_ContainsCycle_returns_false_when_list_is_empty_Test8TestBodyEv:
+        1:   35:TEST_F(MyClassTest, ContainsCycle_returns_false_when_list_is_empty) {
+        -:   36:
+        1:   37:  auto list = std::forward_list<int>{};
+        1:   37-block  0
+    $$$$$:   37-block  1
+        -:   38:
+        1:   39:  auto containsCycle = myClass.ContainsCycle(list);
+        -:   40:
+       1*:   41:  ASSERT_FALSE(containsCycle);
+        1:   41-block  0
+    %%%%%:   41-block  1
+    %%%%%:   41-block  2
+    %%%%%:   41-block  3
+    %%%%%:   41-block  4
+    %%%%%:   41-block  5
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+    $$$$$:   41-block 11
+    $$$$$:   41-block 12
+        -:   42:}
+------------------
+        -:   43:
+        4:   44:TEST_F(MyClassTest, Reverses_input_based_on_separator_space) {
+        -:   45:
+        1:   46:  auto part1 = std::to_string(std::rand());
+        1:   47:  auto part2 = std::to_string(std::rand());
+        1:   48:  auto part3 = std::to_string(std::rand());
+        2:   49:  auto input = part1 + " " + part2 + " " + part3;
+        2:   50:  auto inputInReverse = part3 + " " + part2 + " " + part1;
+        -:   51:
+        1:   52:  auto output = myClass.ReverseWords(input);
+        -:   53:
+       1*:   54:  ASSERT_EQ(inputInReverse, output);
+        -:   55:}
+------------------
+_ZN56MyClassTest_Reverses_input_based_on_separator_space_TestC2Ev:
+        1:   44:TEST_F(MyClassTest, Reverses_input_based_on_separator_space) {
+        1:   44-block  0
+------------------
+_ZN56MyClassTest_Reverses_input_based_on_separator_space_TestD0Ev:
+        1:   44:TEST_F(MyClassTest, Reverses_input_based_on_separator_space) {
+        1:   44-block  0
+------------------
+_ZN56MyClassTest_Reverses_input_based_on_separator_space_TestD2Ev:
+        1:   44:TEST_F(MyClassTest, Reverses_input_based_on_separator_space) {
+        1:   44-block  0
+------------------
+_ZN56MyClassTest_Reverses_input_based_on_separator_space_Test8TestBodyEv:
+        1:   44:TEST_F(MyClassTest, Reverses_input_based_on_separator_space) {
+        -:   45:
+        1:   46:  auto part1 = std::to_string(std::rand());
+        1:   46-block  0
+    $$$$$:   46-block  1
+        1:   47:  auto part2 = std::to_string(std::rand());
+        1:   47-block  0
+    $$$$$:   47-block  1
+        1:   48:  auto part3 = std::to_string(std::rand());
+        1:   48-block  0
+    $$$$$:   48-block  1
+        2:   49:  auto input = part1 + " " + part2 + " " + part3;
+        1:   49-block  0
+        1:   49-block  1
+        1:   49-block  2
+        1:   49-block  3
+    $$$$$:   49-block  4
+    $$$$$:   49-block  5
+    $$$$$:   49-block  6
+    $$$$$:   49-block  7
+        2:   50:  auto inputInReverse = part3 + " " + part2 + " " + part1;
+        1:   50-block  0
+        1:   50-block  1
+        1:   50-block  2
+    $$$$$:   50-block  3
+    $$$$$:   50-block  4
+    $$$$$:   50-block  5
+    $$$$$:   50-block  6
+        -:   51:
+        1:   52:  auto output = myClass.ReverseWords(input);
+    $$$$$:   52-block  0
+        -:   53:
+       1*:   54:  ASSERT_EQ(inputInReverse, output);
+        1:   54-block  0
+        1:   54-block  1
+    %%%%%:   54-block  2
+    %%%%%:   54-block  3
+    %%%%%:   54-block  4
+    %%%%%:   54-block  5
+    $$$$$:   54-block  6
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+        -:   55:}
+------------------
+        -:   56:
+        4:   57:TEST_F(MyClassTest, IsPalindrome_returns_true_when_word_is_same_when_reversing_characters) {
+        -:   58:
+        1:   59:  auto palindrome = "laval";
+        -:   60:
+        1:   61:  auto result = myClass.IsPalindrome(palindrome);
+        -:   62:
+       1*:   63:  ASSERT_TRUE(result);
+        -:   64:}
+------------------
+_ZN86MyClassTest_IsPalindrome_returns_true_when_word_is_same_when_reversing_characters_TestC2Ev:
+        1:   57:TEST_F(MyClassTest, IsPalindrome_returns_true_when_word_is_same_when_reversing_characters) {
+        1:   57-block  0
+------------------
+_ZN86MyClassTest_IsPalindrome_returns_true_when_word_is_same_when_reversing_characters_TestD0Ev:
+        1:   57:TEST_F(MyClassTest, IsPalindrome_returns_true_when_word_is_same_when_reversing_characters) {
+        1:   57-block  0
+------------------
+_ZN86MyClassTest_IsPalindrome_returns_true_when_word_is_same_when_reversing_characters_TestD2Ev:
+        1:   57:TEST_F(MyClassTest, IsPalindrome_returns_true_when_word_is_same_when_reversing_characters) {
+        1:   57-block  0
+------------------
+_ZN86MyClassTest_IsPalindrome_returns_true_when_word_is_same_when_reversing_characters_Test8TestBodyEv:
+        1:   57:TEST_F(MyClassTest, IsPalindrome_returns_true_when_word_is_same_when_reversing_characters) {
+        -:   58:
+        1:   59:  auto palindrome = "laval";
+        -:   60:
+        1:   61:  auto result = myClass.IsPalindrome(palindrome);
+        1:   61-block  0
+        1:   61-block  1
+        1:   61-block  2
+    $$$$$:   61-block  3
+    $$$$$:   61-block  4
+    $$$$$:   61-block  5
+    $$$$$:   61-block  6
+        -:   62:
+       1*:   63:  ASSERT_TRUE(result);
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+    %%%%%:   63-block  2
+    %%%%%:   63-block  3
+    %%%%%:   63-block  4
+    $$$$$:   63-block  5
+    $$$$$:   63-block  6
+    $$$$$:   63-block  7
+    $$$$$:   63-block  8
+    $$$$$:   63-block  9
+    $$$$$:   63-block 10
+    $$$$$:   63-block 11
+        -:   64:}
+------------------
+        -:   65:
+        4:   66:TEST_F(MyClassTest, IsPalindrome_returns_false_when_word_is_not_same_when_reversing_characters) {
+        -:   67:
+        1:   68:  auto palindrome = "lavals";
+        -:   69:
+        1:   70:  auto result = myClass.IsPalindrome(palindrome);
+        -:   71:
+       1*:   72:  ASSERT_FALSE(result);
+        -:   73:}

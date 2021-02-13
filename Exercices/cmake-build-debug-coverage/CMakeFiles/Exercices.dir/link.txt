@@ -1,0 +1,1 @@
+/usr/bin/c++  --coverage -g   CMakeFiles/Exercices.dir/src/main/main.cpp.o CMakeFiles/Exercices.dir/src/main/MyClass.cpp.o  -o Exercices  lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a -lpthread 

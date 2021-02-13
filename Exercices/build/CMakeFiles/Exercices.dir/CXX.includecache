@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/src/main/MyClass.cpp
+unordered_map
+-
+MyClass.h
+/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/src/main/MyClass.h
+
+/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/src/main/MyClass.h
+forward_list
+-
+
+/home/brownthedev/Documents/uLaval/Hiver2021/IFT-2008 Algorithmes et structures de données/DataStructuresExercices/Exercices/src/main/main.cpp
+

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Exercices.dir/src/main/main.cpp.o CMakeFiles/Exercices.dir/src/main/MyClass.cpp.o  -o Exercices  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a -lpthread 
